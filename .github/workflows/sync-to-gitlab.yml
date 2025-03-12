@@ -15,8 +15,8 @@ jobs:
 
     - name: Push to GitLab
       env:
-        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-        GITLAB_REPO_URL: ${{ secrets.GITLAB_REPO_URL }}
+        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN_LAB }}
+        GITLAB_REPO_URL: ${{ secrets.GITLAB_REPO_URL_HUB }}
       run: |
     
         git config --global user.name "Pankaj-Kamate"

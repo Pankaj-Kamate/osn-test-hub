@@ -21,6 +21,5 @@ jobs:
     
         git config --global user.name "github-actions"
         git config --global user.email "actions@github.com"
-        URL_WITH_TOKEN="https://${GITLAB_TOKEN}@${GITLAB_REPO_URL#https://}"
-        git remote add gitlab $URL_WITH_TOKEN
+        git remote add gitlab https://${GITLAB_REPO_URL#https://}:${GITLAB_TOKEN}@gitlab.com/${GITLAB_REPO_URL#https://gitlab.com/}
         git push --force --set-upstream gitlab HEAD:main

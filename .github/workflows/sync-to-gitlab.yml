@@ -3,7 +3,7 @@ name: Sync to GitLab
 on:
   push:
     branches:
-      - main # or the branch you want to monitor
+      - main # or the branch you want to monitors
 
 jobs:
   sync:

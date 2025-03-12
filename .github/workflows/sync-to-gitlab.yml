@@ -23,5 +23,5 @@ jobs:
         git config --global user.email "pankajkamate@gmail.com"
     
     
-        git remote add gitlab https://${GITLAB_TOKEN}@${GITLAB_REPO_URL#https://}
+        git remote add gitlab https://${GITLAB_TOKEN_LAB}@${GITLAB_REPO_URL_HUB#https://}
         git push --force --set-upstream gitlab HEAD:main

@@ -19,8 +19,8 @@ jobs:
         GITLAB_REPO_URL: ${{ secrets.GITLAB_REPO_URL }}
       run: |
     
-        git config --global user.name "Pankaj-Kamate"
-        git config --global user.email "pankajkamate@gmail.com"
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
     
     
         git remote add gitlab https://${GITLAB_TOKEN}@${GITLAB_REPO_URL#https://}
